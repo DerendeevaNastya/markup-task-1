@@ -8,16 +8,15 @@
     <form name="mailer" action="index.html">
         <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
-        <label for="name">Ваше имя</label><input type="text" id="name" placeholder="Имя"
-        required><br><br>
-        <label for="email">Email</label><input type="text" id="email" placeholder="email@yandex.ru"
-        required pattern="\S+@[a-z]+.[a-z]+"><br><br>
-        <label for="phoneNumber">Телефон</label><input type="text" id="phoneNumber" placeholder="89990007766"
-        required pattern="\d{11}"><br><br>
+        <label>Ваше имя<input type="text" placeholder="Имя" required></label><br><br>
+        <label>Email<input type="text" placeholder="email@yandex.ru"
+            required pattern="\S+@[a-z]+.[a-z]+"></label><br><br>
+        <label>Телефон<input type="text" placeholder="89990007766"
+            required pattern="\d{11}"></label><br><br>
 
         <p>Хочу получать уведомления:<br>
-        <input id="checkEmail" type="checkbox" value="email"><label for="checkEmail">на почту</label><br>
-        <input id="checkPhone" type="checkbox" value="phone"><label for="checkPhone">на телефон</label></p>
+        <label><input type="checkbox" value="email">на почту</label><br>
+        <label><input type="checkbox" value="phone">на телефон</label></p>
 
         <button type="submit">отправить</button>
     </form>
